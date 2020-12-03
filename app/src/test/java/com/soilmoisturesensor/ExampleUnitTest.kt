@@ -1,4 +1,4 @@
-package com.example.soilmoisturesensor
+package com.soilmoisturesensor
 
 import org.junit.Test
 
