@@ -1,5 +1,6 @@
 package com.soilmoisturesensor
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
@@ -91,6 +92,7 @@ class PlantDBViewEndpoint : AppCompatActivity() {
 
         var inputLine: String? = null
 
+        @SuppressLint("WrongThread")
         override fun doInBackground(vararg params: String?): String? {
             var JsonResponse: String? = null
             val JsonDATA = params[0]!!
@@ -98,7 +100,7 @@ class PlantDBViewEndpoint : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/getPlantData");
+                val url = URL("https://ecoders.nikhilkapadia.com/getPlantData");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 // is output buffer writter

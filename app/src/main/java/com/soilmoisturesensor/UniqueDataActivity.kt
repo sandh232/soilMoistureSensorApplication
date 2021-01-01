@@ -165,7 +165,7 @@ class UniqueDataActivity : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/updateDeviceName");
+                val url = URL("https://ecoders.nikhilkapadia.com/updateDeviceName");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");
@@ -242,7 +242,7 @@ class UniqueDataActivity : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/specificDate");
+                val url = URL("https://ecoders.nikhilkapadia.com/specificDate");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");

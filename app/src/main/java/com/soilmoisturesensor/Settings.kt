@@ -208,7 +208,7 @@ class Settings : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/updateUserData");
+                val url = URL("https://ecoders.nikhilkapadia.com/updateUserData");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");

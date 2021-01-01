@@ -43,9 +43,6 @@ class DeviceSetup : AppCompatActivity() {
         pageAdapter.addFragment(SimpleFragment.newInstance("Sample input data below.",9),"  9  ")
         pageAdapter.addFragment(SimpleFragment.newInstance("Select the ‘Save’ button once done",10)," 10  ")
 
-
-
-
         val tabs = findViewById<View>(R.id.tabs) as TabLayout
         val pager = findViewById<View>(R.id.viewPaper) as ViewPager
         pager.adapter = pageAdapter

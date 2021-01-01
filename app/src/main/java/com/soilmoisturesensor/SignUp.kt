@@ -180,7 +180,7 @@ class SignUp : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/addUser");
+                val url = URL("https://ecoders.nikhilkapadia.com/addUser");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 // is output buffer writter

@@ -122,11 +122,12 @@
 
             <Button
                 android:id="@+id/button_authenticate"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="#8c9e75"
                 android:fontFamily="sans-serif-medium"
                 android:text="Authenticate"
+                android:layout_gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
@@ -225,11 +226,12 @@
 
             <Button
                 android:id="@+id/button_update"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="#8c9e75"
                 android:fontFamily="sans-serif-medium"
                 android:text="Update"
+                android:layout_gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/common_google_signin_btn_text_dark_default" />
 

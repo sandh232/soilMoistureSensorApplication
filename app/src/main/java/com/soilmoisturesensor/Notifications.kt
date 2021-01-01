@@ -217,11 +217,9 @@ class Notifications : AppCompatActivity() {
                 //get the deviceName for the available deviceId's
                 var index = 0
 
-
                 for (j in deviceId){
                     for(i in list){
-                        val a = i.deviceID.toString()
-                        val b = i.deviceID
+
                         if (j.equals(i.deviceID.toString()))
                             devNames.add(userDevices.get(index))
                     }
@@ -407,7 +405,7 @@ class Notifications : AppCompatActivity() {
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/updateNotification");
+                val url = URL("https://ecoders.nikhilkapadia.com/updateNotification");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 // is output buffer writter

@@ -193,7 +193,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             var urlConnection: HttpURLConnection? = null
             var reader: BufferedReader? = null
             try {
-                val url = URL("https://www.ecoders.ca/login");
+                val url = URL("https://ecoders.nikhilkapadia.com/login");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");
@@ -285,7 +285,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             var reader: BufferedReader? = null
 
             try {
-                val url = URL("https://www.ecoders.ca/getSensorData");
+                val url = URL("https://ecoders.nikhilkapadia.com/getSensorData");
                 urlConnection = url.openConnection() as HttpURLConnection;
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");
